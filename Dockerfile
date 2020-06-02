@@ -1,5 +1,7 @@
 FROM php:7.3.18-cli-alpine
 
+RUN docker-php-ext-install intl soap pdo_pgsql
+
 #RUN apt-get update \
 #    && apt-get -y --no-install-recommends install apt-utils openssh-client rsync curl \
 #	wget zip git 
