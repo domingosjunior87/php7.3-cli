@@ -2,7 +2,7 @@ FROM domingosjunior87/php7.3:latest
 
 RUN apt-get update \
     && apt-get -y --no-install-recommends install apt-utils openssh-client rsync curl \
-	wget zip git 
+	wget zip unzip git 
 
 # Configure SSH
 RUN which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y ) \
